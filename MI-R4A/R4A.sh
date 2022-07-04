@@ -25,7 +25,7 @@ sed -i 's/OpenWrt /编译时间 $(TZ=UTC-8 date "+%Y.%m.%d") @ Indusy /g' packag
 #更改主机型号，支持中文。 
 sed -i "s/Xiaomi Mi Router 4A Gigabit Edition/小米4A千兆版/g" target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit.dts
 
-sed -i "s/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g" target/linux/ramips/Makefile
+#sed -i "s/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g" target/linux/ramips/Makefile
 
 # 状态系统增加个性信息
 sed -i "s/exit 0//" package/lean/default-settings/files/zzz-default-settings
